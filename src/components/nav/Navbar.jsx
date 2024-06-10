@@ -8,7 +8,9 @@ export const Navbar = () => {
 
   return (
     <nav>
-        <Link to="/" className='title'> Batafly</Link>
+        <Link to="/" className='logo'>
+                <img src={logo} alt="Logo" className="logo-img" />
+        </Link>
         <div className='menu' onClick={() => {
             setMenuOpen(!menuOpen)
         }}>
