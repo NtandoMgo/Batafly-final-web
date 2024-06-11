@@ -17,21 +17,18 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(130, 189, 238, 1);
-    position: sticky;
+    margin: 40px 120px;
+    position: fixed;
     top: 0;
-}
-
-nav .title {
-    font-size: 1.5rem;
-    margin: 1rem;
-    font-weight: bold;
-    text-decoration: none;
-    color: rgba(63, 79, 148, 1);
+    width: 100%;
+    z-index: 1000; /* Ensure nav stays on top */
+    background-color: transparent; /* Ensure no background color */
 }
 
 nav ul {
     display: flex;
+    align-items: center;
+    font-size: 18px;
 }
 
 nav ul li {
@@ -42,15 +39,15 @@ nav ul li a {
     display: block;
     text-decoration: none;
     color: black;
-    padding: 0.5rem 0.75rem; 
+    padding: 0.5rem 0.75rem;
     margin: 0 0.5rem;
     border-radius: 0.5rem;
     font-weight: bold;
 }
 
 nav ul li a:not(.active):hover {
-    background-color: transparent; 
-    border-bottom: 2px solid rgba(36, 30, 184, 0.5); 
+    background-color: transparent;
+    border-bottom: 2px solid rgba(36, 30, 184, 0.5);
 }
 
 nav .menu {
@@ -75,10 +72,11 @@ nav .menu span {
     nav .menu {
         display: flex;
     }
-    
+
     nav {
         flex-direction: column;
         align-items: start;
+        margin: 0; /* Adjust margins for mobile view */
     }
 
     nav ul {

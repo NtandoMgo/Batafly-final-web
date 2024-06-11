@@ -1,108 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
+import './Home.css'
+import { Background } from './components/background/Background'
 
 export const Home = () => {
+    let heroData = [
+        {text1:"The podcast", text2:"Business Today"}, 
+        {Text1: "Guest interview", Text2: "Entrepreneurship insights"}, 
+        {Text1: "New release", Text2: "Industry innovations"},
+    ]
+    const [heroCount, setHeroCout] = useState(0)
+    const [playStatus, setPlayStatus] = useState(false)
   return (
     <div>
-      <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique provident 
-          aperiam ullam porro saepe iure placeat eaque? Quibusdam, expedita architecto 
-          explicabo aut voluptas mollitia ut adipisci nisi, sequi aliquid voluptate.
-      </div>
-      <br />
-      <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique provident 
-          aperiam ullam porro saepe iure placeat eaque? Quibusdam, expedita architecto 
-          explicabo aut voluptas mollitia ut adipisci nisi, sequi aliquid voluptate.
-      </div>
-      <br />
-      <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique provident 
-          aperiam ullam porro saepe iure placeat eaque? Quibusdam, expedita architecto 
-          explicabo aut voluptas mollitia ut adipisci nisi, sequi aliquid voluptate.
-      </div>
-      <br />
-      <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique provident 
-          aperiam ullam porro saepe iure placeat eaque? Quibusdam, expedita architecto 
-          explicabo aut voluptas mollitia ut adipisci nisi, sequi aliquid voluptate.
-      </div>
-      <br />
-      <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique provident 
-          aperiam ullam porro saepe iure placeat eaque? Quibusdam, expedita architecto 
-          explicabo aut voluptas mollitia ut adipisci nisi, sequi aliquid voluptate.
-      </div>
-      <br />
-      <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique provident 
-          aperiam ullam porro saepe iure placeat eaque? Quibusdam, expedita architecto 
-          explicabo aut voluptas mollitia ut adipisci nisi, sequi aliquid voluptate.
-      </div>
-      <br />
-      <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique provident 
-          aperiam ullam porro saepe iure placeat eaque? Quibusdam, expedita architecto 
-          explicabo aut voluptas mollitia ut adipisci nisi, sequi aliquid voluptate.
-      </div>
-      <br />
-      <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique provident 
-          aperiam ullam porro saepe iure placeat eaque? Quibusdam, expedita architecto 
-          explicabo aut voluptas mollitia ut adipisci nisi, sequi aliquid voluptate.
-      </div>
-      <br />
-      <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique provident 
-          aperiam ullam porro saepe iure placeat eaque? Quibusdam, expedita architecto 
-          explicabo aut voluptas mollitia ut adipisci nisi, sequi aliquid voluptate.
-      </div>
-      <br />
-      <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique provident 
-          aperiam ullam porro saepe iure placeat eaque? Quibusdam, expedita architecto 
-          explicabo aut voluptas mollitia ut adipisci nisi, sequi aliquid voluptate.
-      </div>
-      <br />
-      <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique provident 
-          aperiam ullam porro saepe iure placeat eaque? Quibusdam, expedita architecto 
-          explicabo aut voluptas mollitia ut adipisci nisi, sequi aliquid voluptate.
-      </div>
-      <br />
-      <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique provident 
-          aperiam ullam porro saepe iure placeat eaque? Quibusdam, expedita architecto 
-          explicabo aut voluptas mollitia ut adipisci nisi, sequi aliquid voluptate.
-      </div>
-      <br />
-      <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique provident 
-          aperiam ullam porro saepe iure placeat eaque? Quibusdam, expedita architecto 
-          explicabo aut voluptas mollitia ut adipisci nisi, sequi aliquid voluptate.
-      </div>
-      <br />
-      <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique provident 
-          aperiam ullam porro saepe iure placeat eaque? Quibusdam, expedita architecto 
-          explicabo aut voluptas mollitia ut adipisci nisi, sequi aliquid voluptate.
-      </div>
-      <br />
-      <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique provident 
-          aperiam ullam porro saepe iure placeat eaque? Quibusdam, expedita architecto 
-          explicabo aut voluptas mollitia ut adipisci nisi, sequi aliquid voluptate.
-      </div>
-      <br />
-      <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique provident 
-          aperiam ullam porro saepe iure placeat eaque? Quibusdam, expedita architecto 
-          explicabo aut voluptas mollitia ut adipisci nisi, sequi aliquid voluptate.
-      </div>
-      <br />
-      <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique provident 
-          aperiam ullam porro saepe iure placeat eaque? Quibusdam, expedita architecto 
-          explicabo aut voluptas mollitia ut adipisci nisi, sequi aliquid voluptate.
-      </div>
-      <br />
-      <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique provident 
-          aperiam ullam porro saepe iure placeat eaque? Quibusdam, expedita architecto 
-          explicabo aut voluptas mollitia ut adipisci nisi, sequi aliquid voluptate.
-      </div>
-      <br />
-      <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique provident 
-          aperiam ullam porro saepe iure placeat eaque? Quibusdam, expedita architecto 
-          explicabo aut voluptas mollitia ut adipisci nisi, sequi aliquid voluptate.
-      </div>
-      <br />
-      <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique provident 
-          aperiam ullam porro saepe iure placeat eaque? Quibusdam, expedita architecto 
-          explicabo aut voluptas mollitia ut adipisci nisi, sequi aliquid voluptate.
-      </div>
-      <br />
+        <Background playStatus={playStatus} heroCount={heroCount}/>
     </div>
   )
 }
