@@ -29,6 +29,8 @@ nav ul {
     display: flex;
     align-items: center;
     font-size: 18px;
+    margin: 0 auto; /* Center the ul */
+    padding: 0 2rem; /* Adjust padding to move links closer to the center */
 }
 
 nav ul li {
