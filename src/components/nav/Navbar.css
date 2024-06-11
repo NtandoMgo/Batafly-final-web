@@ -23,6 +23,7 @@ nav {
     width: 100%;
     z-index: 1000; /* Ensure nav stays on top */
     background-color: transparent; /* Ensure no background color */
+    border-bottom: 1px solid lightblue; /* Light blue solid line at the bottom */
 }
 
 nav ul {
