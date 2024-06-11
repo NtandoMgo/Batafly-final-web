@@ -24,5 +24,9 @@
     color: #292929;
     font-size: 30px;
     font-weight: 500px;
-
+}
+.hero-dot-play{
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-between;
 }
