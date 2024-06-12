@@ -20,10 +20,11 @@ nav {
     margin: 40px 120px;
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
-    z-index: 1000; /* Ensure nav stays on top */
-    background-color: transparent; /* Ensure no background color */
-    border-bottom: 1px solid lightblue; /* Light blue solid line at the bottom */
+    z-index: 1000;
+    background-color: transparent;
+    border-bottom: 1px solid lightblue;
 }
 
 nav ul {

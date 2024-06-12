@@ -41,6 +41,7 @@ export const Trending = () => {
 
   return (
     <div className='trending-container'>
+      <h2>TRENDING</h2>
       <div className='slider-wrapper'>
         <Slider {...settings}>
           {trends.map((d, index) => (

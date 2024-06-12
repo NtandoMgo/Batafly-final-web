@@ -6,9 +6,9 @@ import { Trending } from './components/trending/Trending'
 
 export const Home = () => {
     let heroData = [
-        {text1:"The podcast", text2:"Business Today"}, 
-        {text1: "Guest interview", text2: "Entrepreneurship"}, 
-        {text1: "New release", text2: "Industry innovations"},
+        {text1:"THE PODCAST", text2:"Business Today"}, 
+        {text1: "GUEST INTERVIEW", text2: "Entrepreneurship"}, 
+        {text1: "NEW RELEASE", text2: "Industry innovations"},
     ]
     const [heroCount, setHeroCout] = useState(0)
     const [playStatus, setPlayStatus] = useState(false)
