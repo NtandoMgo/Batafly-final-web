@@ -1,9 +1,9 @@
 import './Hero.css'
 import arrow_btn from '../../../../../assets/background_home/arrow_btn.png'
-import play_icon from '../../../../../assets/background_home/play_icon.png'
-import pause_icon from '../../../../../assets/background_home/pause_icon.png'
+import playbtn from '../../../../../assets/background_home/playbtn.png'
+import pausebtn from '../../../../../assets/background_home/pausebtn.png'
 
-export const Hero = ({setPlayStatus,heroData,heroCount,setHeroCout,playStatus}) => {
+export const Hero = ({heroData,setPlayStatus,heroCount,setHeroCout,playStatus}) => {
   return (
     <div className='hero'>
       <div className="hero-text">
@@ -12,7 +12,7 @@ export const Hero = ({setPlayStatus,heroData,heroCount,setHeroCout,playStatus}) 
       </div>
       <div className="listen-explore">
         <p>Listen</p>
-        <img src={arrow_btn} alt="" />
+        <img src={arrow_btn} alt="" className='blue-filter'/>
       </div>
       <div className="hero-dot-play">
         <ul className="hero-dots">
@@ -21,7 +21,7 @@ export const Hero = ({setPlayStatus,heroData,heroCount,setHeroCout,playStatus}) 
           <li onClick={()=> setHeroCout(2)} className={heroCount===2?"hero-dot orange":"hero-dot"}></li>
         </ul>
         <div className="hero-play">
-          <img onClick={()=>setPlayStatus(!playStatus)} src={playStatus?pause_icon:play_icon} alt="" />
+          <img onClick={()=>setPlayStatus(!playStatus)} src={playStatus?pausebtn:playbtn} alt="" className='aquamarine-filter'/>
           <p>See the video</p>
         </div>
       </div>

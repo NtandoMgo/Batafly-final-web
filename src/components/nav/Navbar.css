@@ -83,14 +83,14 @@ nav .menu span {
     }
 
     nav ul {
-        display: none;
+        display: none; /* Hide the ul by default */
         flex-direction: column;
         width: 100%;
         margin-bottom: 0.25rem;
     }
 
     nav ul.open {
-        display: flex;
+        display: flex; /* Display the ul when it has the open class */
     }
 
     nav ul li {

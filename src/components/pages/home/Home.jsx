@@ -6,8 +6,8 @@ import { Hero } from './components/hero/Hero'
 export const Home = () => {
     let heroData = [
         {text1:"The podcast", text2:"Business Today"}, 
-        {Text1: "Guest interview", Text2: "Entrepreneurship insights"}, 
-        {Text1: "New release", Text2: "Industry innovations"},
+        {text1: "Guest interview", text2: "Entrepreneurship insights"}, 
+        {text1: "New release", text2: "Industry innovations"},
     ]
     const [heroCount, setHeroCout] = useState(2)
     const [playStatus, setPlayStatus] = useState(false)

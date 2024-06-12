@@ -1,5 +1,4 @@
 .hero {
     position: relative; /* Set position to relative */
-    z-index: 1; /* Set a higher z-index to ensure it appears on top */
-    background-color: transparent; /* Make the hero section transparent */
+    z-index: 0;
 }
