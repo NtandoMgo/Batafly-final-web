@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import './Home.css'
 import { Background } from './components/background/Background'
 import { Hero } from './components/hero/Hero'
+import { Trending } from './components/trending/Trending'
 
 export const Home = () => {
     let heroData = [
@@ -28,6 +29,7 @@ export const Home = () => {
             setHeroCout={setHeroCout}
             playStatus={playStatus}
         />
+        <Trending/>
     </div>
   )
 }
