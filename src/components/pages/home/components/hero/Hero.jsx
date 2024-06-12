@@ -8,7 +8,7 @@ export const Hero = ({heroData,setPlayStatus,heroCount,setHeroCout,playStatus}) 
     <div className='hero'>
       <div className="hero-text">
         <p>{heroData.text1}</p>
-        <p>{heroData.text2}</p>
+        <h5>{heroData.text2}</h5>
       </div>
       <div className="listen-explore">
         <p>LISTEN</p>
