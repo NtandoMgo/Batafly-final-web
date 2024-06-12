@@ -11,7 +11,7 @@ export const Hero = ({heroData,setPlayStatus,heroCount,setHeroCout,playStatus}) 
         <p>{heroData.text2}</p>
       </div>
       <div className="listen-explore">
-        <p>Listen</p>
+        <p>LISTEN</p>
         <img src={arrow_btn} alt="" className='blue-filter'/>
       </div>
       <div className="hero-dot-play">

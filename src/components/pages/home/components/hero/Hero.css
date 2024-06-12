@@ -6,7 +6,7 @@
     color: black;
     font-size: 8vw; /* Use vw for responsive font size */
     font-weight: 500;
-    line-height: 200px;
+    line-height: 150px;
 }
 .listen-explore{
     display: flex;
@@ -16,14 +16,18 @@
     margin-top: 70px;
     padding: 5px 8px;
     padding-left: 30px;
-    border-radius: 60px;
-    background-color: aqua;
     cursor: pointer;
+    border: 2px solid black;  /* Adds border to all sides */
+    border-right: none;       /* Removes border from the right side */
 }
 .listen-explore p{
     color: #292929;
-    font-size: 7vw; /* Use vw for responsive font size */
+    font-size: 2vw; /* Use vw for responsive font size */
     font-weight: 500px;
+}
+.listen-explore img{
+    width: 3vw;
+    height: auto;
 }
 .hero-dot-play{
     margin-top: 120px;
@@ -72,7 +76,6 @@
     .listen-explore {
         gap: 10px;
         margin-top: 30px;
-        border-radius: 30px;
     }
     .hero-dot-play {
         margin-top: 90px; /* Reduce margin for smaller screens */
