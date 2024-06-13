@@ -14,18 +14,17 @@ export const Publication = () => {
               <img src={arrow_btn} alt="" className='no-color-filter'/>
           </div>
       </div>
-        <div className="overlay-text1">Text Over Image 1</div>
-      </div>
-      <div className="background-image image2">
-      <div className="overlay-text">
-          <p className='text-top'>PUBLICATION</p>
-          <p className='text-topic'>How Top100 Fortune Companies are using AI</p>
-          <div className="view-btn">
-            <p>VIEW</p>
-              <img src={arrow_btn} alt=""/>
-          </div>
         </div>
-      </div>
+          <div className="background-image image2">
+            <div className="overlay-text">
+              <p className='text-top'>PUBLICATION</p>
+              <p className='text-topic'>How Top100 Fortune Companies are using AI</p>
+              <div className="view-btn">
+                <p>VIEW</p>
+                  <img src={arrow_btn} alt=""/>
+              </div>
+            </div>
+        </div>
     </div>
   );
 };

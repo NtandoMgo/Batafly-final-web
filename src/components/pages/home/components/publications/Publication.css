@@ -1,52 +1,74 @@
 .publication-container {
-    display: flex;
-    width: 100%;
-  }
-  
-  .background-image {
-    position: relative;
-    width: 50%;
-    height: 400px;
-    background-size: cover;
-    background-position: center;
-  }
-  
-  .image1 {
-    background-image: url('../../../../../assets/trending_home_publications/photo.jpg');
-  }
-  
-  .image2 {
-    background-image: url('../../../../../assets/trending_home_publications/photo1.jpg');
-  }
-  
-  .overlay-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 2vw; /* Adjust font size as needed */
-    text-align: left;
-  }
+  display: flex;
+  width: 100%;
+}
 
+.background-image {
+  position: relative;
+  width: 50%;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+}
+
+.image1 {
+  background-image: url('../../../../../assets/trending_home_publications/photo.jpg');
+}
+
+.image2 {
+  background-image: url('../../../../../assets/trending_home_publications/photo1.jpg');
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2vw;
+  text-align: left;
+}
+
+.overlay-text .text-top {
+  color: darkgrey;
+}
+
+.overlay-text .text-topic {
+  font-size: 4vw;
+}
+
+.overlay-text .view-btn {
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+  border: 2px solid;
+  width: fit-content;
+  margin-top: 4vw;
+}
+
+.overlay-text .view-btn img{
+  width: 3vw;
+  height: auto;
+  color: transparent;
+}
+
+@media (max-width: 480px) {
   .overlay-text .text-top {
-    color: darkgrey;
-  }
-
-  .overlay-text .text-topic {
+    font-weight: bold;
     font-size: 4vw;
   }
 
-  .overlay-text .view-btn {
-    display: flex;
-    align-items: center;
-    gap: 2vw;
-    border: 2px solid;
+  .overlay-text .text-topic {
+    font-size: 7vw;
+  }
+  .image2 .overlay-text .text-topic {
+    font-size: 6vw;
   }
 
-  .overlay-text .view-btn img{
-    width: 3vw;
-    height: auto;
-    color: transparent;
+  .overlay-text .view-btn {
+    font-size: 4vw;
   }
-  
+  .overlay-text .view-btn img{
+    width: 4vw;
+  }
+}
