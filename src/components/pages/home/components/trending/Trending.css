@@ -1,62 +1,95 @@
 .trending-container {
-    width: 75%;
-    margin: auto;
-    text-align: center;
-  }
-  .trending-container h2 {
-    margin-top: 7vw;
-    background-color: rgba(255, 255, 255, 0.9);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 10px 20px;
-  }
-  
-  .slider-wrapper {
-    margin-top: 5rem;
+  width: 90%; /* Maintain a larger width */
+  margin: 0 auto; /* Center horizontally */
+  text-align: center;
+}
+
+.trending-container h2 {
+  margin-top: 5vw; /* Adjust top margin */
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+}
+
+.slider-wrapper {
+  margin-top: 3rem; /* Adjust top margin */
+}
+
+.slick-slide > div {
+  margin: 0 8px;
+}
+
+.trend-item {
+  background-color: white;
+  height: 150px;
+  color: black;
+  border-radius: 0.75rem;
+}
+
+.trend-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  box-sizing: border-box; /* Ensure padding is included in the width/height */
+}
+
+.trend-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-align: center; /* Center text */
+}
+
+.trend-type {
+  color: lightblue;
+}
+
+.half-arrow-button {
+  background: none; /* Ensure no background */
+  border: none; /* Ensure no border */
+  padding: 0; /* Remove padding */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.half-arrow-button img {
+  width: 30px;
+  height: auto;
+}
+
+@media (max-width: 600px) {
+  .trending-container {
+    width: 95%; /* Make the container wider */
   }
 
-  .slick-slide > div {
-    margin: 0 8px;
-  }
-  
   .trend-item {
-    background-color: white;
-    height: 150px;
-    color: black;
-    border-radius: 0.75rem;
+    padding: 0.5rem; /* Reduce padding */
   }
-  
-  .trend-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    padding: 1rem;
-  }
-  
+
   .trend-title {
-    font-size: 1.25rem;
-    font-weight: 600;
+    font-size: 1rem; /* Adjust font size */
   }
-  
+
   .trend-type {
-    color: lightblue;
+    font-size: 0.875rem; /* Adjust font size */
   }
-  
-  .half-arrow-button {
-    background: none; /* Ensure no background */
-    border: none; /* Ensure no border */
-    padding: 0; /* Remove padding */
-    cursor: pointer; /* Pointer cursor on hover */
+}
+
+@media (max-width: 480px) {
+  .trending-container h2 {
+    margin-top: 10vw; /* Adjust margin for better positioning on small screens */
   }
-  
-  .half-arrow-button img {
-    width: 30px;
-    height: auto;
+
+  .trend-item {
+    padding: 0.5rem; /* Reduce padding */
   }
-  
-  @media (max-width: 480px) {
-    .trending-container h2 {
-    margin-top: 10vw;
+
+  .trend-title {
+    font-size: 1rem;
   }
+
+  .trend-type {
+    font-size: 0.875rem;
   }
+}

@@ -3,7 +3,7 @@ import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import arrow_btn from '../../../../../assets/half_arrow.png'
+import arrow_btn from '../../../../../assets/half_arrow.png';
 import { useNavigate } from 'react-router-dom';
 
 export const Trending = () => {
@@ -32,9 +32,21 @@ export const Trending = () => {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           slidesToScroll: 1,
-          initialSlide: 1,
+          infinite: true,
+          dots: true,
+          arrows: false,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+          arrows: false,
         },
       },
     ],
