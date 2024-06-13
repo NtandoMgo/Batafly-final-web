@@ -1,0 +1,52 @@
+.publication-container {
+    display: flex;
+    width: 100%;
+  }
+  
+  .background-image {
+    position: relative;
+    width: 50%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .image1 {
+    background-image: url('../../../../../assets/trending_home_publications/photo.jpg');
+  }
+  
+  .image2 {
+    background-image: url('../../../../../assets/trending_home_publications/photo1.jpg');
+  }
+  
+  .overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2vw; /* Adjust font size as needed */
+    text-align: left;
+  }
+
+  .overlay-text .text-top {
+    color: darkgrey;
+  }
+
+  .overlay-text .text-topic {
+    font-size: 4vw;
+  }
+
+  .overlay-text .view-btn {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    border: 2px solid;
+  }
+
+  .overlay-text .view-btn img{
+    width: 3vw;
+    height: auto;
+    color: transparent;
+  }
+  
