@@ -3,6 +3,7 @@ import './Home.css'
 import { Background } from './components/background/Background'
 import { Hero } from './components/hero/Hero'
 import { Trending } from './components/trending/Trending'
+import { Publication } from './components/publications/Publication'
 
 export const Home = () => {
     let heroData = [
@@ -30,6 +31,7 @@ export const Home = () => {
             playStatus={playStatus}
         />
         <Trending/>
+        <Publication/>
     </div>
   )
 }
