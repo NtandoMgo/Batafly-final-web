@@ -13,6 +13,10 @@
   .slider-wrapper {
     margin-top: 5rem;
   }
+
+  .slick-slide > div {
+    margin: 0 8px;
+  }
   
   .trend-item {
     background-color: white;
