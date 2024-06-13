@@ -1,22 +1,23 @@
+.publication-scroll-container {
+  width: 100%;
+  overflow-x: scroll;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
 .publication-container {
   display: flex;
+  flex-wrap: nowrap;
   width: 100%;
 }
 
 .background-image {
   position: relative;
-  width: 50%;
-  height: 400px;
+  flex: 0 0 50%; /* Each image takes up 50% of the container width */
+  height: 60vw;
   background-size: cover;
   background-position: center;
-}
-
-.image1 {
-  background-image: url('../../../../../assets/trending_home_publications/photo.jpg');
-}
-
-.image2 {
-  background-image: url('../../../../../assets/trending_home_publications/photo1.jpg');
 }
 
 .overlay-text {
@@ -46,10 +47,10 @@
   margin-top: 4vw;
 }
 
-.overlay-text .view-btn img{
+.overlay-text .view-btn img {
   width: 3vw;
   height: auto;
-  color: transparent;
+  filter: invert(1) brightness(2);
 }
 
 @media (max-width: 480px) {
@@ -61,6 +62,7 @@
   .overlay-text .text-topic {
     font-size: 7vw;
   }
+
   .image2 .overlay-text .text-topic {
     font-size: 6vw;
   }
@@ -68,7 +70,9 @@
   .overlay-text .view-btn {
     font-size: 4vw;
   }
-  .overlay-text .view-btn img{
+
+  .overlay-text .view-btn img {
     width: 4vw;
+    filter: invert(1) brightness(2);
   }
 }

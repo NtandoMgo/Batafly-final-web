@@ -3,6 +3,7 @@ import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import arrow_btn from '../../../../../assets/half_arrow.png'
 import { useNavigate } from 'react-router-dom';
 
 export const Trending = () => {
@@ -50,8 +51,7 @@ export const Trending = () => {
                 <p className='trend-title'>{d.title}</p>
                 <p className='trend-type'>{d.type}</p>
                 <button className='half-arrow-button' onClick={handleClick}>
-                  <div className='line'></div>
-                  <div className='arrow'></div>
+                  <img src={arrow_btn} alt="VIEW"/>
                 </button>
               </div>
             </div>
