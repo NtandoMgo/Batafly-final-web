@@ -1,6 +1,5 @@
 .thoughts-container {
     background-color: white;
-    padding: 20px;
     text-align: center;
     max-width: 100%;
     margin: 0 auto;
@@ -9,7 +8,7 @@
   
   .topic-header {
     color: lightgray;
-    font-size: 24px;
+    font-size: 5vw;
     margin-bottom: 10px;
   }
   
@@ -23,28 +22,31 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 10px; /* Add a small gap between the images */
   }
   
-  .image-left, .image-right {
+  .image-left {
     position: relative;
-    flex: 1;
+    flex: 2; /* Take up more space */
   }
   
-  .image-left img {
+  .image-right {
+    position: relative;
+    flex: 1; /* Take up less space */
+  }
+  
+  .image-left img{
     width: 100%;
     height: auto;
   }
   
   .image-right img {
+    width: 30vw;
     height: 15vw; /* Adjust this value to make the right image shorter */
   }
   
-  .overlay-text {
-    position: absolute;
-    transform: translate(-50%, -50%);
+  .overlay-text { 
+    transform: translate(-100);
     color: white;
-    padding: 10px;
   }
   
   .additional-text {
@@ -53,3 +55,10 @@
     text-align: center;
   }
   
+  .text1 {}
+  
+  .text2 {}
+
+  .text-below1 {}
+  
+  .text-below2 {}

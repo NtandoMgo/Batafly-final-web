@@ -11,24 +11,19 @@ const Thoughts = () => {
       <p className="subtext">Together we can innovate and be the Future</p>
       <div className="image-container">
         <div className="image-left">
-          <img src={vr} alt="Chickens" />
+          <img src={vr} alt="VR" />
           <div className="overlay-text">
-            <p  className='text1'> Metaverse :How to prepare your company for a virtual life</p>
-            <p text2>Being in touch with the digital would be the first stance you stand on as 
-              preparation of the future, as its the new earth for most organisations and clients.
-            </p>
+            <p className="text1">Metaverse: How to prepare your company for a virtual life</p>
+            <p className="text2">Being in touch with the digital world is the first step in preparing for the future, as it is the new frontier for most organizations and clients.</p>
           </div>
         </div>
         <div className="image-right">
-          <img src={chickens} alt="VR" />
-          <div className="overlay-text">VR Image</div>
+          <img src={chickens} alt="Chickens" />
         </div>
       </div>
       <div className="additional-text">
-      <p  className='text-below1'> Metaverse :How to prepare your company for a virtual life</p>
-      <p text-below2>Being in touch with the digital would be the first stance you stand on as 
-              preparation of the future, as its the new earth for most organisations and clients.
-            </p>
+        <p className="text-below1">Metaverse: How to prepare your company for a virtual life</p>
+        <p className="text-below2">Being in touch with the digital world is the first step in preparing for the future, as it is the new frontier for most organizations and clients.</p>
       </div>
     </div>
   )
