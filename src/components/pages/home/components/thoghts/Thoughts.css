@@ -1,27 +1,26 @@
 .thoughts-container {
     background-color: white;
-    text-align: center;
     max-width: 100%;
-    margin: 0 auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
   .topic-header {
     color: lightgray;
     font-size: 5vw;
-    margin-bottom: 10px;
+    text-align: center;
   }
   
   .subtext {
     color: #333;
     font-size: 18px;
     margin-bottom: 20px;
+    text-align: center;
   }
   
   .image-container {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    gap: 1vw;
   }
   
   .image-left {
@@ -41,24 +40,94 @@
   
   .image-right img {
     width: 30vw;
-    height: 15vw; /* Adjust this value to make the right image shorter */
+    height: 15vw;
   }
   
   .overlay-text { 
-    transform: translate(-100);
     color: white;
+    position: absolute;
+    top: 15vw;
+    left: 23vw;
+  }
+
+  .overlay-text .text1 {
+    font-size: 4vw;
+  }
+
+  .overlay-text .text2 {
+    margin-top: 5vw;
+    font-size: 1.5vw;
+    color: lightgray;
+  }
+
+  .overlay-text .explore-btn {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    border: 2px solid;
+    border-color: blue;
+    width: fit-content;
+    margin-top: 4vw;
+    position: absolute;
+    bottom: -13vw;
+    right: -15vw;
+  }
+
+  .explore-btn img {
+    width: 3vw;
+    height: auto;
+    filter: invert(1) brightness(2);
+  }
+
+  .image-right .explore-btn {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    border: 2px solid;
+    border-color: lightblue;
+    width: fit-content;
+    margin-top: 4vw;
+    position: absolute;
+    bottom: 3.5vw;
+    right: 3vw;
+  }
+
+  .image-right .explore-btn img {
+    width: 3vw;
+    height: auto;
+    filter: hue-rotate(180deg) brightness(1.5);
   }
   
   .additional-text {
-    margin-top: 10px;
-    font-size: 16px;
-    text-align: center;
+    text-align: left;
   }
   
-  .text1 {}
-  
-  .text2 {}
+  .additional-text .text-below1 {
+    font-size: 2vw;
+    font-weight: bold;
+    margin-bottom: 3vw;
+  }
 
-  .text-below1 {}
+  @media (max-width: 480px) {
+    .overlay-text .text1 {
+      text-align: left;
+      font-size: 3vw;
+    }
   
-  .text-below2 {}
+    .overlay-text .text2 {
+      margin-top: 2vw;
+      text-align: left;
+      font-size: 1vw;
+      color: lightgray;
+    }
+
+    .additional-text .text-below1 {
+      font-size: 3vw;
+      font-weight: bold;
+      margin-bottom: 2vw;
+    }
+
+    .additional-text .text-below2 {
+      font-size: 2vw;
+    }
+  }
