@@ -1,5 +1,5 @@
 .thoughts-container {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.95); /* Whitish background with high transparency */
     max-width: 100%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }

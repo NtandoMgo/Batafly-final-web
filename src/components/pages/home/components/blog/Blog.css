@@ -1,0 +1,72 @@
+.blog-container {
+    padding: 2vw;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.95); /* Whitish background with high transparency */
+}
+
+.blog-container h1 {
+    color: lightgray;
+    font-size: 5vw;
+    padding-bottom: 2vw;
+}
+  
+.blog-showcase {
+display: flex;
+justify-content: center;
+gap: 20px;
+width: 100%;
+max-width: 1200px;
+margin: 0 auto;
+}
+
+.side-blogs {
+display: flex;
+flex-direction: column;
+gap: 20px;
+}
+
+.blog-item {
+position: relative;
+width: 100%;
+max-width: 300px; /* Adjust based on your design */
+height: auto;
+overflow: hidden;
+border-radius: 8px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.blog-item-large {
+width: 100%;
+max-width: 600px; /* Adjust based on your design */
+height: auto;
+overflow: hidden;
+border-radius: 8px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.blog-item img {
+width: 100%;
+height: auto; /* Ensure image retains its aspect ratio */
+object-fit: cover;
+border-top-left-radius: 8px;
+border-top-right-radius: 8px;
+}
+
+.blog-info {
+background-color: rgba(0, 0, 0, 0.8);
+padding: 10px;
+border-bottom-left-radius: 8px;
+border-bottom-right-radius: 8px;
+color: white;
+text-align: left;
+}
+
+.blog-date {
+font-size: 12px;
+margin-bottom: 5px;
+}
+
+.blog-description {
+font-size: 14px;
+margin: 0;
+}

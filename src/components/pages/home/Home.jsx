@@ -5,6 +5,7 @@ import { Hero } from './components/hero/Hero'
 import { Trending } from './components/trending/Trending'
 import { Publication } from './components/publications/Publication'
 import Thoughts from './components/thoghts/Thoughts'
+import Blog from './components/blog/Blog'
 
 export const Home = () => {
     let heroData = [
@@ -34,6 +35,7 @@ export const Home = () => {
         <Trending/>
         <Publication/>
         <Thoughts/>
+        <Blog/>
     </div>
   )
 }
