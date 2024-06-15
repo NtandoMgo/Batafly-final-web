@@ -6,6 +6,7 @@ import { Trending } from './components/trending/Trending'
 import { Publication } from './components/publications/Publication'
 import Thoughts from './components/thoghts/Thoughts'
 import Blog from './components/blog/Blog'
+import Footer from '../../footer/Footer'
 
 export const Home = () => {
     let heroData = [
@@ -36,6 +37,7 @@ export const Home = () => {
         <Publication/>
         <Thoughts/>
         <Blog/>
+        <Footer/>
     </div>
   )
 }
