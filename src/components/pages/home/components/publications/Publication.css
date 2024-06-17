@@ -4,6 +4,7 @@
   display: flex;
   justify-content: center;
   padding: 20px 0;
+  background-color: white;
 }
 
 .publication-container {
@@ -15,7 +16,7 @@
 .background-image {
   position: relative;
   flex: 0 0 50%; /* Each image takes up 50% of the container width */
-  height: 60vw;
+  height: 80vh;
   background-size: cover;
   background-position: center;
 }
@@ -74,5 +75,8 @@
   .overlay-text .view-btn img {
     width: 4vw;
     filter: invert(1) brightness(2);
+  }
+  .background-image {
+    height: 35vh;
   }
 }

@@ -1,0 +1,19 @@
+.about-container {
+    background: radial-gradient(circle at 33% 50%, rgba(98, 224, 229, 1) 0%, rgba(255, 255, 253, 1) 45%, rgba(52, 210, 220, 1) 100%);
+    padding: 20px;
+}
+
+.hero-section {
+    display: flex;
+}
+
+.hero-text {
+
+}
+
+.hero-image img{
+    width: 50vw;
+    height: 50vh;
+}
+
+  
