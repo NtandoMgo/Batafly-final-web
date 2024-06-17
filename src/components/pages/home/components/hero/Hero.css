@@ -1,130 +1,37 @@
-.hero {
-    margin: 0 5%;
-    margin-top: 200px;
+.hero-content {
+    padding-top: 30vh;
+    padding-left: 2vw;
 }
 
-.hero-text {
-    margin-top: 1vw;
-    color: black;
-    font-weight: 500;
-}
-.custom-text1 {
-    font-size: 2VW;
-}
-  .custom-text2 {
-    font-size: 5vw;
+.hero-content .text1 {
+    font-size: 1.5vw;
+    line-height: 6vh;
 }
 
-.listen-explore {
+.hero-content .text2 {
+    font-size: 4vw;
+    line-height: 6vh;
+}
+
+
+.listen-btn {
+    margin-top: 5vh;
     display: flex;
     align-items: center;
     gap: 2vw;
-    width: fit-content;
-    margin-top: 4vw;
-    padding-left: 3vw;
-    cursor: pointer;
-    border: 2px solid black;
+    border: 2px solid;
     border-right: none;
+    border-color: white;
+    width: fit-content;
+    margin-bottom: 30vh;
 }
 
-.listen-explore p {
-    color: #292929;
+.listen-btn p {
     font-size: 2vw;
-    font-weight: bold;
 }
 
-.listen-explore img {
-    width: 3vw;
-    height: auto;
-}
-
-.hero-dot-play {
-    margin-top: 8vw;
-    display: flex;
-    justify-content: space-between;
-}
-
-.hero-dots {
-    display: flex;
-    align-items: center;
-    gap: 2.3vw; /* Use vw for responsive gap */
-    list-style: none;
-}
-
-.hero-dot {
-    width: 3vw; /* Use vw for responsive size */
-    height: 3vw; /* Use vw for responsive size */
-    background: white;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-.hero-dot.orange {
-    background-color: darkblue;
-}
-
-.hero-play {
-    display: flex;
-    align-items: center;
-    gap: 3vw; /* Use vw for responsive gap */
-}
-
-.hero-play p {
-    font-size: 4vw; /* Use vw for responsive font size */
-    color: aquamarine;
-    font-weight: bold;
-}
-
-.aquamarine-filter {
-    filter: invert(85%) sepia(20%) saturate(631%) hue-rotate(124deg) brightness(103%) contrast(94%);
-}
-
-.blue-filter {
-    filter: invert(27%) sepia(100%) saturate(7490%) hue-rotate(203deg) brightness(95%) contrast(106%);
-}
-
-@media (max-width: 480px) {
-    .hero {
-        margin-top: 55vw;
-    }
-
-    .hero-text {
-        font-size: 15vw;
-        line-height: 15vw; /* Adjust line height for smaller screens */
-    }
-
-    .custom-text1 {
-        font-size: 3VW;
-      }
-
-    .listen-explore {
-        margin-left: 3vw;
-        gap: 3vw;
-        margin-top: 7vw;
-    }
-
-    .listen-explore p {
-        font-size: 2.5vw;
-        font-weight: bold;
-    }
-    
-    .listen-explore img {
-        width: 4vw;
-        height: auto;
-    }
-
-    .hero-dot-play {
-        margin-top: 20vw; /* Adjust margin for smaller screens */
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .hero-dots {
-        margin-left: 5vw;
-    }
-
-    .hero-play {
-        flex-direction: column;
-        gap: 3vw;
-    }
+.listen-btn img {
+width: 3vw;
+height: auto;
+filter: invert(27%) sepia(75%) saturate(3988%) hue-rotate(183deg) brightness(103%) contrast(102%);
 }

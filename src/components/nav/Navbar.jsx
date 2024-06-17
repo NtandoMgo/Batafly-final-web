@@ -8,7 +8,7 @@ export const Navbar = () => {
 
   return (
     <nav>
-        <Link to="/" className='logo'>
+        <Link to="/" className='logo-header'>
                 <img src={logo} alt="Logo" className="logo-img" />
         </Link>
         <div className='menu' onClick={() => {

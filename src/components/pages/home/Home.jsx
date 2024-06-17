@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import './Home.css'
-import { Background } from './components/background/Background'
 import { Hero } from './components/hero/Hero'
 import { Trending } from './components/trending/Trending'
 import { Publication } from './components/publications/Publication'
@@ -9,35 +8,17 @@ import Blog from './components/blog/Blog'
 import Footer from '../../footer/Footer'
 
 export const Home = () => {
-    let heroData = [
-        {text1:"THE PODCAST", text2:"Business Today"}, 
-        {text1: "GUEST INTERVIEW", text2: "Entrepreneurship"}, 
-        {text1: "NEW RELEASE", text2: "Industry innovations"},
-    ]
-    const [heroCount, setHeroCout] = useState(0)
-    const [playStatus, setPlayStatus] = useState(false)
-
-    useEffect(()=>{
-      setInterval(() => {
-        setHeroCout((count)=>{return count===2?0:count+1})
-      }, 3000);
-    },[])
-
   return (
-    <div>
-        <Background playStatus={playStatus} heroCount={heroCount}/>
-        <Hero 
-            setPlayStatus={setPlayStatus}
-            heroData={heroData[heroCount]}
-            heroCount={heroCount}
-            setHeroCout={setHeroCout}
-            playStatus={playStatus}
-        />
-        <Trending/>
-        <Publication/>
-        <Thoughts/>
-        <Blog/>
-        <Footer/>
+    <div className='home-container'>
+      <div className='content-container'>
+        <Hero className='full-height' />
+        
+        <Trending className='full-height' />
+        <Publication className='full-height' />
+        <Thoughts className='full-height' />
+        <Blog className='full-height' />
+        
+      </div>
     </div>
   )
 }

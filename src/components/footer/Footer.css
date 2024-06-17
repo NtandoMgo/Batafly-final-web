@@ -1,141 +1,134 @@
-.footer-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 20px;
-    background-color: #f0f0f0;
-  }
-  
-  .footer-left {
-    display: flex;
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #f0f0f0;
+  position: relative; /* Ensure footer-bottom is positioned correctly */
+}
+
+.top-footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Align items at the top */
+  padding-bottom: 5vh;
+}
+
+.footer-left {
+  flex: 1 1 50%; /* Left section takes 50% of the container */
+  padding-right: 5vw; /* Space between left and right sections */
+}
+
+.logo {
+  width: 120px; /* Adjust size as needed */
+}
+
+.subscribe-text {
+  padding-top: 5vh;
+  font-size: 1.5rem;
+  color: lightblue;
+}
+
+.subscribe-text2 {
+  font-size: 1.2rem;
+}
+
+.subscribe {
+  margin-top: 10px;
+}
+
+.subscribe input {
+  width: 15vw;
+  padding: 8px;
+  margin-right: 5px;
+}
+
+.subscribe button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.footer-divider {
+  border-right: 2px solid #ccc;
+  height: 20vh; /* Adjust height as needed */
+  margin: 0 20px;
+}
+
+.footer-right {
+  flex: 1 1 50%; /* Right section takes 50% of the container */
+  padding-left: 20px; /* Space between left and right sections */
+}
+
+.footer-links {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  display: block;
+  color: #333;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+.social-links {
+  margin-top: 10px;
+}
+
+.social-links img {
+  width: 30px; /* Adjust size as needed */
+  height: auto;
+}
+
+.social-links a {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.footer-line {
+  border: 0;
+  border-top: 1px solid #333;
+  margin: 20px 0;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #666;
+  font-size: 0.9rem;
+  position: absolute;
+  bottom: 0;
+  width: 95vw;
+  padding-bottom: 2vh;
+}
+
+.company-name {
+  font-weight: bold;
+}
+
+.copyright {
+  font-size: 0.8rem;
+}
+
+@media (max-width: 768px) {
+  .top-footer-container {
     flex-direction: column;
+    align-items: center;
   }
-  
-  .logo-footer img {
-    width: 20vw;
+
+  .footer-left, .footer-right {
+    margin-bottom: 20px;
   }
-  
-  .subscribe .sub-scribe {
-    color: aqua;
-    font-size: 2vw;
-    padding-top: 2vw;
-  }
-  
-  .subscribe input[type="email"] {
-    padding: 8px;
-    width: 200px;
-    margin-right: 10px;
-  }
-  
-  .subscribe .in-put {
-    border: 2px solid;
-  }
-  
-  .subscribe button {
-    padding: 8px 16px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .separator {
-    border-left: 2px solid #ccc;
-    height: 13vw; /* Adjust height as needed */
-    margin: 0 20px;
-    margin-left: 20vw;
-  }
-  
-  .footer-right {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .text-links {
-    display: flex;
-    justify-content: space-between;
-    gap: 2vw;
-    padding-top: 3vw;
-    padding-bottom: 6vw;
-  }
-  
-  .text-links a {
-    color: #333;
-    text-decoration: none;
-  }
-  
-  .social-icons {
-    display: flex; /* Hide social icons by default */
-    margin-left: 20vw;
-  }
-  .social-icons-small {
+
+  .footer-divider {
     display: none;
   }
-  
-  .social-icons.mobile {
-    display: flex;
-    justify-content: center; /* Center align on small screens */
-    position: absolute; /* Position the icons absolutely */
-    bottom: 20px; /* Adjust as needed for spacing from the bottom */
-    left: 50%; /* Center horizontally */
-    transform: translateX(-50%); /* Center horizontally */
-    margin-top: 20px; /* Add margin to separate from above content */
-  }
-  
-  .social-icons a {
-    margin-right: 10px;
-  }
-  
-  .social-icons img {
-    width: 30px; /* Adjust size of social icons */
-    height: 30px;
-  }
 
-  .separator1 {
-    
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
   }
-  
-  @media (max-width: 480px) {
-    .logo-footer img {
-        width: 30vw;
-      }
-
-    .subscribe {
-        margin-top: 10vw;
-    }
-
-    .subscribe .sub-scribe {
-      font-size: 4.5vw;
-      padding-top: 4vw;
-    }
-    
-    .subscribe .message {
-      font-size: 3vw;
-    }
-    
-    .separator {
-      height: 48vw; /* Adjust height as needed */
-      margin: 0 20px;
-    }
-    
-    .text-links {
-      flex-direction: column;
-    }
-    
-    .social-icons {
-      display: none; /* Display social icons on small screens */
-    }
-
-    .social-icons-small img {
-        width: 30px; /* Adjust size of social icons */
-        height: 30px;
-      }
-
-    .social-icons-small {
-        display: flex;
-        position: absolute;
-        left: 35vw;
-        padding-top: 50vw;
-    }
-  }
-  
+}
