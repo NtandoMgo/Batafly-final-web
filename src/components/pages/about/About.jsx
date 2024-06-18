@@ -19,7 +19,19 @@ export const About = () => {
           <img src={blue_orange} alt="Blue and Orange" />
         </div>
         <div className="hero-subtext">
-          <p>Additional text goes here. This could be a caption, quote, or any supplementary information.</p>
+          <p>Our purpose is to create innovation by solving most important problems in our societywithout changing our identity, traditions, cultures and religios values. </p>
+          <b></b>
+          <p>We believe that progress should not require sacrificing the essence of who we 
+            are as a society. By embracing innovation, we strive to find groundbreaking ways 
+            to tackle pressing issues without compromising the unique aspects that define us. 
+          </p>
+          <b></b>
+          <p>This approach allows us to harness the power of creativity, technology, and 
+            forward thinking ideas, while cherishing and respecting our heritage. Through 
+            this balanced approach, we aim to prepare for the future and be the future, one 
+            that upholds our core values and contributes to the greater good of our society, 
+            without undermining the rich tapestry of our collective identity.
+          </p>
         </div>
       </div>
       <div className="mission-section"></div>
